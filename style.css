@@ -32,7 +32,8 @@ header h1 {
 }
 
 header h1 img {
-    height: 50px;
+    height: 50px; /* ロゴ画像の高さ */
+    width: auto;
 }
 
 header nav ul {
@@ -53,11 +54,11 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: #c8a97e;
+    color: #c8a97e; /* ホバー時の色 */
 }
 
 main {
-    padding-top: 60px;
+    padding-top: 60px; /* ヘッダーの高さ分 */
 }
 
 .hero {
@@ -79,7 +80,7 @@ main {
 .hero-content h2.catchphrase {
     font-size: 2.5em;
     margin-bottom: 20px;
-    color: #c8a97e;
+    color: #c8a97e; /* メインカラー */
 }
 
 .hero-content p.lead {
@@ -101,7 +102,7 @@ main {
 
 .button {
     display: inline-block;
-    background-color: #c8a97e;
+    background-color: #c8a97e; /* メインカラー */
     color: #fff;
     padding: 15px 30px;
     text-decoration: none;
@@ -110,20 +111,20 @@ main {
 }
 
 .button:hover {
-    background-color: #b39367;
+    background-color: #b39367; /* ホバー時の色 */
 }
 
 .button.secondary {
-    background-color: #777;
+    background-color: #777; /* サブカラー */
 }
 
 .button.secondary:hover {
-    background-color: #555;
+    background-color: #555; /* ホバー時の色 */
 }
 
 .section-title {
     font-size: 2em;
-    color: #c8a97e;
+    color: #c8a97e; /* メインカラー */
     text-align: center;
     margin-bottom: 40px;
 }
@@ -158,7 +159,7 @@ main {
 
 .menu-item h3 {
     margin-top: 0;
-    color: #c8a97e;
+    color: #c8a97e; /* メインカラー */
 }
 
 .menu-item p {
@@ -189,7 +190,7 @@ main {
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     object-fit: cover;
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 16 / 9; /* 画像のアスペクト比を統一 */
 }
 
 .access {
@@ -227,7 +228,7 @@ footer {
     font-size: 0.9em;
 }
 
-/* 必要に応じてレスポンシブデザインを追加 */
+/* レスポンシブデザイン */
 @media (max-width: 768px) {
     .container {
         padding: 0 20px;
@@ -261,6 +262,6 @@ footer {
     }
 
     .hero-image {
-        order: -1;
+        order: -1; /* スマホで画像を上に表示 */
     }
 }
